@@ -1,0 +1,2 @@
+# Keep content hashes stable across Linux, macOS and Windows checkouts.
+* text=auto eol=lf

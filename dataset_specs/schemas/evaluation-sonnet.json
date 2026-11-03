@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:genrag:schemas:evaluation-sonnet:v1",
+  "title": "NTS independent evaluation-query generator response v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "query",
+    "style",
+    "answerability_qa"
+  ],
+  "properties": {
+    "query": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 240
+    },
+    "style": {
+      "type": "string",
+      "enum": [
+        "client_situation_relayed",
+        "practitioner_concise",
+        "fact_pattern",
+        "statutory_application"
+      ]
+    },
+    "answerability_qa": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 300
+    }
+  }
+}

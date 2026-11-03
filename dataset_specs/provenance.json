@@ -1,0 +1,210 @@
+{
+  "acquisition": "Read-only export of an existing Milvus chunk index; not a fresh public-portal crawl.",
+  "artifacts_not_distributed": {
+    "core4_historical_dedup_train": {
+      "rows": 533710,
+      "sha256": "7f8e7bb6fea5de34b33b0dabd6da578a15505a16f15a28eb00f2faf495d24801"
+    },
+    "core4_original_train": {
+      "rows": 543867,
+      "sha256": "699baa29973b8e07598b089f4daa9b3090cfa9376d31c90e6a30f5d710dba2d8"
+    },
+    "corpus_documents": {
+      "chunks": 434740,
+      "rulings": 135991,
+      "sha256": "9f4ef114078bdccf914a659ec017c89e5f0a092770e80539e0df31e0405c4d21"
+    },
+    "evaluation_gemini988": {
+      "fixed_cohort_rows": 931,
+      "generator": "Gemini 3.7 Flash",
+      "rows": 988,
+      "sha256": "dfc9e27cd385d426053a18c725b42cbb168ae35222e9250015eecd473e223f49"
+    },
+    "evaluation_sonnet4992": {
+      "fixed_cohort_rows": 4697,
+      "generator": "anthropic/claude-sonnet-5",
+      "rows": 4992,
+      "sha256": "eb5ae1c1d9d647d93a8c65959cc238dc48b5bfc21cd42d3dad6f224c7dd7193b"
+    },
+    "expanded12_train": {
+      "rows": 1622929,
+      "sha256": "427fa5cba993bbf6688b6917978bfddbf4e099f7f8893fb2976d412fec4c826b"
+    },
+    "expanded8_initial_train": {
+      "rows": 1077069,
+      "sha256": "2c2b23f3799cfc84a98e9ae085c3319ebb61689b531751f6596267730d852f16"
+    },
+    "expanded8_restored_train": {
+      "rows": 1080148,
+      "sha256": "ef45e5fa2d0cba9ed363b60508ac6fae611c0ffab1c8db8c43a078f33daadeeb"
+    },
+    "id_migration_v1_to_v2": {
+      "rows": 135991,
+      "sha256": "c93ad212fa12cad2d5de0fd0e00a7d9cef228eb507a435d373c2afe1fbb0fe4b"
+    },
+    "registry_v2": {
+      "rows": 135991,
+      "sha256": "1c588e924b1eb0c3a0a39242cc9b3e1601cd8dd80451524829d5d18b848bb78f"
+    }
+  },
+  "data_distributed": false,
+  "final_consolidation": {
+    "accepted_addition_candidates": 543948,
+    "addition_rows_omitted": 1167,
+    "addition_rows_retained": 542781,
+    "base_rows_preserved": 1080148,
+    "candidate_universe_rulings": 135991,
+    "final_training_rows": 1622929,
+    "fully_twelve_role_rulings": 128780,
+    "near_duplicate_filter_applied_to_final_release": false,
+    "omission_reasons": {
+      "matches_existing_base_other_ruling": 1,
+      "matches_existing_base_same_ruling": 2,
+      "new_cross_ruling_exact_duplicate": 1164
+    },
+    "provider_filtered_addition_rulings": 2,
+    "training_rulings": 135989
+  },
+  "public_source": "https://taxlaw.nts.go.kr/",
+  "reference_final_training_release_date": "2026-10-29",
+  "reference_snapshot_date": "2026-08-13",
+  "reproduction_limits": [
+    "Reference SHA-256 values identify undistributed research artifacts; they are not download links.",
+    "Prompt copies are exact; schema $id metadata is anonymized and JSON reserialized.",
+    "Prior pilot responses retain their original prompt/contract provenance when imported.",
+    "Exact historic reproduction requires original snapshots, mappings, raw responses, validators, recovery decisions and frozen implementations.",
+    "New API calls are not guaranteed to reproduce old text even with the same seed."
+  ],
+  "schema_version": "genrag.dataset-provenance.v1",
+  "serial_policy": "Preserve the frozen earlier registry serial and migration map.",
+  "source_context": {
+    "allowed_fields": [
+      "case_title",
+      "authority_date",
+      "related_laws",
+      "reply_text",
+      "summary_text"
+    ],
+    "development_questions_in_prompts": false,
+    "extensions_may_see_existing_training_queries": true,
+    "forbidden_parts": [
+      "detail",
+      "combined"
+    ],
+    "original_requester_questions_in_prompts": false
+  },
+  "source_identity_format": "NTS-{18-digit ntstDcmId}",
+  "specifications": {
+    "core4": {
+      "max_completion_tokens": 1200,
+      "prompt": {
+        "bundled_sha256": "69b9cda3c5303987ff31b20490a87de0da79adaa26a1f17875b50fd2b3e44f9b",
+        "original_sha256": "69b9cda3c5303987ff31b20490a87de0da79adaa26a1f17875b50fd2b3e44f9b",
+        "path": "prompts/core4.md",
+        "transformation": "none"
+      },
+      "queries_requested_per_document": 4,
+      "roles": [
+        "plain_language",
+        "keyword_search",
+        "fact_pattern",
+        "statute_grounded"
+      ],
+      "schema": {
+        "bundled_sha256": "52e24525d82e37793b70138c6a4f89cc4d749442dadd345e41fae0d3f11ddabc",
+        "original_sha256": "be936d5aba503ca5d55358babab8e96ee066ebfffa3a58bfbd49d6ce2b654125",
+        "path": "schemas/core4.json",
+        "transformation": "Only $id changed; JSON reserialized; validation constraints unchanged."
+      }
+    },
+    "evaluation_sonnet": {
+      "prompt": {
+        "bundled_sha256": "6ab61431499f25656bbf027eeb941906e07f2caec9cbca69e84d6f4489b83c9e",
+        "original_sha256": "6ab61431499f25656bbf027eeb941906e07f2caec9cbca69e84d6f4489b83c9e",
+        "path": "prompts/evaluation-sonnet.md",
+        "transformation": "none"
+      },
+      "schema": {
+        "bundled_sha256": "0398ea308805361ca4d778055b9a0e4b6c6e24b24b9ef04c658c8f1816b0f397",
+        "original_sha256": "3cced91e52fb3ae631ee6392fc261a4ddeaac6c3e16a018e64169ffa871d621c",
+        "path": "schemas/evaluation-sonnet.json",
+        "transformation": "Only $id changed; JSON reserialized; validation constraints unchanged."
+      }
+    },
+    "extension4": {
+      "max_completion_tokens": 1200,
+      "prompt": {
+        "bundled_sha256": "bd4ffb7b8c6ac391a87be540250f920f5ad679ddc8b6ac8a0feb1093a4b98679",
+        "original_sha256": "bd4ffb7b8c6ac391a87be540250f920f5ad679ddc8b6ac8a0feb1093a4b98679",
+        "path": "prompts/extension4.md",
+        "transformation": "none"
+      },
+      "queries_requested_per_document": 4,
+      "roles": [
+        "plain_language_alt",
+        "practitioner_concise",
+        "fact_pattern_alt",
+        "ruling_search_request"
+      ],
+      "schema": {
+        "bundled_sha256": "30b4bd5d14855c58fd0e36596ecd6fa7b2652814145726009eefcdb32fddd35d",
+        "original_sha256": "f962cdb2561f99f9a2533ceaa28db999c6e2e670ce062a4300546727652bf554",
+        "path": "schemas/extension4.json",
+        "transformation": "Only $id changed; JSON reserialized; validation constraints unchanged."
+      }
+    },
+    "extension8": {
+      "max_completion_tokens": 1500,
+      "prompt": {
+        "bundled_sha256": "127bce1323d87f94fd87218d97166b0f1930b4a64852a6d364e5fdf0bd508055",
+        "original_sha256": "127bce1323d87f94fd87218d97166b0f1930b4a64852a6d364e5fdf0bd508055",
+        "path": "prompts/extension8.md",
+        "transformation": "none"
+      },
+      "queries_requested_per_document": 4,
+      "roles": [
+        "decisive_condition",
+        "practical_decision",
+        "focused_subissue",
+        "natural_search_fragment"
+      ],
+      "schema": {
+        "bundled_sha256": "ec859db6ae51a7943b66a40a93c1bd13ee6807878be3201ab2b7b8bd13071cf7",
+        "original_sha256": "6ec6f9dcfdad546ba6b89b76c43a842277cf264f65dc99d7a0a1b1a69e8328b4",
+        "path": "schemas/extension8.json",
+        "transformation": "Only $id changed; JSON reserialized; validation constraints unchanged."
+      }
+    },
+    "extension8_pilot": {
+      "note": "Earlier selected-pilot template; accepted responses were imported under their original provenance.",
+      "prompt": {
+        "bundled_sha256": "f3227c1b41c7b1490b4d10b67b0ef06ca78004027242e677ef833eb9ed80759a",
+        "original_sha256": "f3227c1b41c7b1490b4d10b67b0ef06ca78004027242e677ef833eb9ed80759a",
+        "path": "prompts/extension8-pilot.md",
+        "transformation": "none"
+      },
+      "queries_requested_per_document": 4,
+      "roles": [
+        "decisive_condition",
+        "practical_decision",
+        "focused_subissue",
+        "natural_search_fragment"
+      ],
+      "schema": {
+        "bundled_sha256": "ec859db6ae51a7943b66a40a93c1bd13ee6807878be3201ab2b7b8bd13071cf7",
+        "original_sha256": "6ec6f9dcfdad546ba6b89b76c43a842277cf264f65dc99d7a0a1b1a69e8328b4",
+        "path": "schemas/extension8.json",
+        "transformation": "Only $id changed; JSON reserialized; validation constraints unchanged."
+      }
+    }
+  },
+  "target_identity_format": "NTS-INTERP-{LAW_CODE}-{SERIAL7}",
+  "training_generator": {
+    "canonical_revision": "openai/gpt-5.6-luna-20260709",
+    "gateway": "OpenRouter",
+    "provider": "azure",
+    "requested_model": "openai/gpt-5.6-luna",
+    "response_format": "strict JSON Schema",
+    "temperature_parameter_sent": false
+  }
+}

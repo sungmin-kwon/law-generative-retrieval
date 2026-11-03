@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "generative-retrieval-lab"
+dynamic = ["version"]
+description = "Portable, auditable evaluation and rank fusion for generative retrieval research"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+license = "MIT"
+license-files = ["LICENSE", "NOTICE.md"]
+keywords = ["information-retrieval", "generative-retrieval", "evaluation", "rank-fusion"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = ["ruff==0.14.8", "build>=1.3,<2"]
+
+[project.scripts]
+genrag = "genrag.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "genrag.__version__"}
+
+[tool.setuptools.package-data]
+genrag = ["py.typed"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/public"]
+pythonpath = ["src"]
+

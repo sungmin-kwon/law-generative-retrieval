@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:genrag:schemas:core4:v1",
+  "title": "NTS query-screen core-4 response v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "is_tax_case",
+    "tax_type",
+    "issue",
+    "holding_qa",
+    "queries"
+  ],
+  "properties": {
+    "is_tax_case": {
+      "type": "boolean"
+    },
+    "tax_type": {
+      "type": "string",
+      "enum": [
+        "양도소득세",
+        "종합소득세",
+        "퇴직소득세",
+        "법인세",
+        "부가가치세",
+        "상속세",
+        "증여세",
+        "조세특례",
+        "국제조세",
+        "국세기본·징수",
+        "개별소비세",
+        "주세",
+        "인지세",
+        "증권거래세",
+        "종합부동산세",
+        "지방세",
+        "기타",
+        "불명"
+      ]
+    },
+    "issue": {
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 80
+    },
+    "holding_qa": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 300
+    },
+    "queries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "plain_language",
+        "keyword_search",
+        "fact_pattern",
+        "statute_grounded"
+      ],
+      "properties": {
+        "plain_language": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 140
+        },
+        "keyword_search": {
+          "type": "string",
+          "minLength": 8,
+          "maxLength": 120
+        },
+        "fact_pattern": {
+          "type": "string",
+          "minLength": 30,
+          "maxLength": 240
+        },
+        "statute_grounded": {
+          "type": "string",
+          "minLength": 15,
+          "maxLength": 200
+        }
+      }
+    }
+  }
+}

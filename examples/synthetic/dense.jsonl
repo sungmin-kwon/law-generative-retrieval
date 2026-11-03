@@ -1,0 +1,5 @@
+{"query_id":"Q-001","gold_evidence_id":"DOC-001","candidates":["DOC-002","DOC-001","DOC-003"],"depth":10}
+{"query_id":"Q-002","gold_evidence_id":"DOC-002","candidates":["DOC-002","DOC-004"],"depth":10}
+{"query_id":"Q-003","gold_evidence_id":"DOC-003","candidates":["DOC-001","DOC-006","DOC-003"],"depth":10}
+{"query_id":"Q-004","gold_evidence_id":"DOC-004","candidates":["DOC-001","DOC-002"],"depth":10}
+{"query_id":"Q-005","gold_evidence_id":"DOC-005","candidates":[],"depth":10}

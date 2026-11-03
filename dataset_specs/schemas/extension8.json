@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:genrag:schemas:extension8:v1",
+  "title": "NTS Expanded12 pilot response v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "is_tax_case",
+    "tax_type",
+    "queries"
+  ],
+  "properties": {
+    "is_tax_case": {
+      "type": "boolean"
+    },
+    "tax_type": {
+      "type": "string",
+      "enum": [
+        "양도소득세",
+        "종합소득세",
+        "퇴직소득세",
+        "법인세",
+        "부가가치세",
+        "상속세",
+        "증여세",
+        "조세특례",
+        "국제조세",
+        "국세기본·징수",
+        "개별소비세",
+        "주세",
+        "인지세",
+        "증권거래세",
+        "종합부동산세",
+        "지방세",
+        "기타",
+        "불명"
+      ]
+    },
+    "queries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decisive_condition",
+        "practical_decision",
+        "focused_subissue",
+        "natural_search_fragment"
+      ],
+      "properties": {
+        "decisive_condition": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 220
+        },
+        "practical_decision": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 220
+        },
+        "focused_subissue": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 220
+        },
+        "natural_search_fragment": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 160
+        }
+      }
+    }
+  }
+}

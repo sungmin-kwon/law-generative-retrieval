@@ -1,0 +1,15 @@
+name: Bug report
+description: Report a reproducible issue using invented data.
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include the command, expected behavior and actual behavior. Use invented IDs and data; omit credentials and private records.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Python version, operating system and package version.

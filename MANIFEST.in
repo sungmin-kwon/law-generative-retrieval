@@ -1,0 +1,21 @@
+include README.md LICENSE NOTICE.md CONTRIBUTING.md SECURITY.md pyproject.toml
+recursive-include src/genrag *.py py.typed
+prune scripts
+prune configs
+prune results
+prune notebooks
+prune prompts
+prune schemas
+prune jobs
+prune session-state
+prune docs
+prune tests
+include docs/architecture.md docs/getting-started.md docs/evaluation.md
+include docs/research-design.md
+include docs/dataset-reproducibility.md
+include docs/development.md docs/publishing.md
+recursive-include tests/public *.py
+recursive-include examples/synthetic *.json *.jsonl *.md
+recursive-include dataset_specs *.json *.md
+exclude CLAUDE.md DIRECTIVE.md HANDOFF.md setup.sh requirements*.txt
+global-exclude .env .env.* *.pem *.key *.pyc
