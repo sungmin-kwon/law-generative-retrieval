@@ -189,6 +189,12 @@ for checkpoint decisions; they are not a fresh independent final benchmark.
 
 ## 7. Reference checksums and reproduction boundary
 
+The runnable [official Korean sample](../examples/korean-tax/README.md) is a
+separate, four-ruling educational selection. Its [source notes](../examples/korean-tax/SOURCES.md)
+identify the official records, short attributed excerpts and project-authored
+summaries/questions. It does not release the full corpus or the frozen training
+and development question files described here.
+
 [dataset_specs/provenance.json](../dataset_specs/provenance.json) records selected
 counts and SHA-256 identities for the frozen corpus, registry, restored base,
 final training pairs and both development files. It contains no research rows,

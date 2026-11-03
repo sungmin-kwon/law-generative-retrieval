@@ -5,13 +5,13 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "generative-retrieval-lab"
 dynamic = ["version"]
-description = "Portable, auditable evaluation and rank fusion for generative retrieval research"
+description = "Korean tax-ruling generative retrieval: constrained identifiers, evaluation and hybrid fusion"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
 license = "MIT"
 license-files = ["LICENSE", "NOTICE.md"]
-keywords = ["information-retrieval", "generative-retrieval", "evaluation", "rank-fusion"]
+keywords = ["korean-law", "tax-rulings", "information-retrieval", "generative-retrieval", "rank-fusion"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Science/Research",
@@ -32,7 +32,7 @@ where = ["src"]
 version = {attr = "genrag.__version__"}
 
 [tool.setuptools.package-data]
-genrag = ["py.typed"]
+genrag = ["py.typed", "data/*.json"]
 
 [tool.ruff]
 target-version = "py311"

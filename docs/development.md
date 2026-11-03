@@ -11,9 +11,15 @@ python -m build
 ```
 
 The portable tests run with only the Python standard library and the installed
-package. They use invented data and temporary directories; there is no paid API,
+package. They use synthetic fixtures, the attributed four-ruling sample and temporary
+directories; there is no paid API,
 database or GPU dependency. Ruff/build are optional development dependencies.
 The CLI's exit code is zero on success and two for expected validation/file errors.
+
+The Korean sample is package data, not an external dataset dependency. Test
+`genrag demo-ko --json` from a directory outside the checkout after installing
+the wheel; this catches missing-resource packaging errors that source tests miss.
+CI sets `PYTHONUTF8=1` for consistent Korean text in redirected Windows output.
 
 Tests cover rank preservation, truncated metrics, complete cohort alignment,
 universe violations, deterministic fusion, chunk-selection regressions, malformed

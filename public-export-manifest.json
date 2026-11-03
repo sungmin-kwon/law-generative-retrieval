@@ -18,11 +18,11 @@
     },
     ".github/workflows/ci.yml": {
       "path": ".github/workflows/ci.yml",
-      "sha256": "1c408c481cddd104a82a48140c214cacca70dac93332ba88b613d8b632afa48c"
+      "sha256": "3bd8cc78b8e19bb8a38e31611d1e8d2817a3c0f2474b999555a226b902712752"
     },
     ".gitignore": {
       "path": ".gitignore",
-      "sha256": "819b4a96280ea55e22ecad9128e938847532983ebe05489f9e88a5e212a9e6e4"
+      "sha256": "f198488e93f5f7c5e866eeecb31bc0ab6babb5147636895fe7ef5728719a2a45"
     },
     "CONTRIBUTING.md": {
       "path": "CONTRIBUTING.md",
@@ -34,15 +34,15 @@
     },
     "MANIFEST.in": {
       "path": "MANIFEST.in",
-      "sha256": "d23b3de48fe9f528772609540b22b0cf61d411b255ff4b2810b8ead65204fc5c"
+      "sha256": "e3fcc8a1eb0b9917133ff39f9aceee0b805843b1314394d687a88222b268a5bb"
     },
     "NOTICE.md": {
       "path": "NOTICE.md",
-      "sha256": "592cbd2596b4c2ff81988b5e6160a77f5a43e3ecdcbdd640591faed99b104cde"
+      "sha256": "e90c489fde10a38553c77edda7b5538c4e16878a28794a2d8ae6b92c829baadd"
     },
     "README.md": {
       "path": "README.md",
-      "sha256": "824a46e04b700472983f5c51f6d0f5095cf5c914bd6e69c73996844c8b9bd3e7"
+      "sha256": "21547b76831ee9bade06d40b17228ce6ab4c7121fe70826cd91c72e88066e78b"
     },
     "SECURITY.md": {
       "path": "SECURITY.md",
@@ -94,15 +94,15 @@
     },
     "docs/architecture.md": {
       "path": "docs/architecture.md",
-      "sha256": "fe35ecee8ac09578126bfb285f5b7362e0c0dc2f5b80032eb3507cdd5b4eee45"
+      "sha256": "582254ae02aecde54df7e6d1faffd81baa94f3e8731998fdb2b0e0ee65f31419"
     },
     "docs/dataset-reproducibility.md": {
       "path": "docs/dataset-reproducibility.md",
-      "sha256": "df829839fd3300dff3bd56c41752c03405b18edd764164f81f29df1cdffeb54d"
+      "sha256": "41b21962c0f03171e33560999c44b5dcb91e9caf8862bc30ca852aa72ceff3ff"
     },
     "docs/development.md": {
       "path": "docs/development.md",
-      "sha256": "7efaf384449d2dcd039da159636454fa1e2bee1880bdd4c60284f26957905720"
+      "sha256": "b5cd555bfd68fbf3fa9b786610271fbc220eef108c0be6f818a76e551163d590"
     },
     "docs/evaluation.md": {
       "path": "docs/evaluation.md",
@@ -110,15 +110,23 @@
     },
     "docs/getting-started.md": {
       "path": "docs/getting-started.md",
-      "sha256": "40e1b09db1f6d0eb14d7513f4831c57fd50f28ba7751e33710fc361abadda590"
+      "sha256": "d35395da5e2872ed9a9e019d36d996825f140fe2fdaed3e3412d66f3fe0a8e21"
     },
     "docs/publishing.md": {
       "path": "docs/publishing.md",
-      "sha256": "409ee52d4af11b3e91c3efaa54ac4b1df4e51a2db3e08ad1db2adec997c6e27f"
+      "sha256": "748ca8cb656a2dc1bb364c90f0d409d3c32bd6184a6865e1cf2b1aa96fd8e7ab"
     },
     "docs/research-design.md": {
       "path": "docs/research-design.md",
       "sha256": "9ef0ea7c0adabea8d6a98334763c99730e0c755b7f4446666a1b2cbe45cc5276"
+    },
+    "examples/korean-tax/README.md": {
+      "path": "examples/korean-tax/README.md",
+      "sha256": "892cddd44a790d5ca0f27c39df60b2caaab856b4ad36e4e4d8f1d23e0e4d6b03"
+    },
+    "examples/korean-tax/SOURCES.md": {
+      "path": "examples/korean-tax/SOURCES.md",
+      "sha256": "74b03ce5d0927c52f1cf6b3972aff42513e1249c78ead86cb13653f47a22aa35"
     },
     "examples/synthetic/README.md": {
       "path": "examples/synthetic/README.md",
@@ -142,11 +150,11 @@
     },
     "pyproject.toml": {
       "path": "pyproject.toml",
-      "sha256": "d85d146f4804e7296ac8657bbee80ab0f4d59ce5cae8eed4f0c94073a3c79483"
+      "sha256": "8f42d80eb65846e95b01869ced6afaa85a9699bfe247d6be9507326469773548"
     },
     "src/genrag/__init__.py": {
       "path": "src/genrag/__init__.py",
-      "sha256": "995c902ad54c8a789ad90ee6a1071c5ec0e72b164189e2885c7ab61782b7613f"
+      "sha256": "641269900f29f2bd10c4b2cf529fde578fbb4ffcdac10c4c0b7e07252543e90b"
     },
     "src/genrag/__main__.py": {
       "path": "src/genrag/__main__.py",
@@ -158,7 +166,15 @@
     },
     "src/genrag/cli.py": {
       "path": "src/genrag/cli.py",
-      "sha256": "e9a537a99838b48ae827685d75b6339bc17115a689a0f20665fe61388fcec1cf"
+      "sha256": "4bc25deeb3f8a277c56e1a19d94c6a6d9aa3efeda94be1ea6f9e0a9d1f9e5f3e"
+    },
+    "src/genrag/data/korean_tax_rulings.json": {
+      "path": "src/genrag/data/korean_tax_rulings.json",
+      "sha256": "f1cbb607e377078e4820ca25caccdfe6cb421099baf4fa0067aeecd467c6e460"
+    },
+    "src/genrag/demo.py": {
+      "path": "src/genrag/demo.py",
+      "sha256": "a46e3a8daa9877fc527576928905d7f003e2c1fdc0e7351b0d9d96bc76325612"
     },
     "src/genrag/embeddings.py": {
       "path": "src/genrag/embeddings.py",
@@ -194,7 +210,7 @@
     },
     "src/genrag/release.py": {
       "path": "src/genrag/release.py",
-      "sha256": "4ba9ff0a39d20c2bca3bc01ff938fd7a548360a6c2f64465c3c6ed79f5e7c801"
+      "sha256": "df8d2d1d86a63fccfbc069fe582a40a8144c9ceab5eec03a2eeffc4fbdf9d035"
     },
     "src/genrag/trie.py": {
       "path": "src/genrag/trie.py",
@@ -215,6 +231,10 @@
     "tests/public/test_io_adapters.py": {
       "path": "tests/public/test_io_adapters.py",
       "sha256": "7b3cb234c265b8fcd710e87b99a3266baaccce094b89412620aa6f46cfc0f01c"
+    },
+    "tests/public/test_korean_demo.py": {
+      "path": "tests/public/test_korean_demo.py",
+      "sha256": "e7cb9ed6df9b5b1c4ab525435ab718ca996de18aa0f0a51d5a3c85a8039f5c95"
     },
     "tests/public/test_ranking.py": {
       "path": "tests/public/test_ranking.py",

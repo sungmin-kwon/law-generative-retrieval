@@ -10,6 +10,7 @@ from typing import Any
 
 from genrag import __version__
 from genrag.adapters import load_cohort, load_predictions, load_universe
+from genrag.demo import render_korean_demo, run_korean_demo
 from genrag.errors import ValidationError
 from genrag.evaluation import aligned, compare, evaluate, universe_digest
 from genrag.integrity import verify_manifest
@@ -41,6 +42,10 @@ def parser() -> argparse.ArgumentParser:
             command.add_argument("--right-weight", type=float, default=1.0)
             command.add_argument("--rrf-constant", type=int, default=60)
     commands.add_parser("doctor", help="Show portable runtime capabilities; no secret inspection")
+    demo = commands.add_parser(
+        "demo-ko", help="Explore four official Korean tax rulings with sample rankings"
+    )
+    demo.add_argument("--json", action="store_true", help="Print the worked example as JSON")
     verify = commands.add_parser("verify", help="Verify a portable artifact manifest")
     verify.add_argument("manifest", type=Path)
     export = commands.add_parser("export-public", help="Create an allowlisted public source tree")
@@ -65,6 +70,13 @@ def _emit(report: dict[str, Any], output: Path | None = None) -> None:
 
 
 def _run(args: argparse.Namespace) -> None:
+    if args.command == "demo-ko":
+        report = run_korean_demo()
+        if args.json:
+            _emit(report)
+        else:
+            print(render_korean_demo(report))
+        return
     if args.command == "doctor":
         _emit(
             {

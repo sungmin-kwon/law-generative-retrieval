@@ -7,6 +7,7 @@ dense retrieval, keyword search or an existing hybrid component.
 | Module | Responsibility |
 |---|---|
 | `models` | Immutable prediction and candidate-universe contracts |
+| `demo` | Four attributed official Korean rulings, actual fusion/lookup and a walkthrough |
 | `trie` | Tokenizer-independent registered-ID decoding constraints |
 | `adapters` | Strict conversion from saved JSONL formats |
 | `evaluation` | Recall/MRR, fixed cohorts and paired hit transitions |
@@ -21,6 +22,14 @@ There are no global database clients, environment-file loads, model downloads
 or import-time GPU operations. Provider SDKs belong in separately configured
 adapters. A backend implementing `QueryEmbedder.embed_query` can be injected
 without making the evaluation layer depend on its credentials or runtime.
+
+The runnable Korean demo uses the installed `data/korean_tax_rulings.json` resource,
+so it works without a repository checkout or a particular working directory.
+Its prewritten channel rankings are fixtures, not substitutes for a real model
+evaluation. The question, training-pair illustrations and returned document titles
+make the Korean 해석례 use case concrete. Official titles, dates and excerpts
+retain attribution; summaries/questions are project-authored. Research question
+releases and full ruling texts are not bundled.
 
 ## Chunk and document boundaries
 
@@ -47,5 +56,6 @@ or import those runners. New experiments should import reusable functions from
 not silently alter a running experiment or retroactively change its metrics.
 
 The public export includes the portable package, tests, examples and documentation.
-It excludes the private experiment tree and all data/model artifacts. A source
+It excludes the private experiment tree and research data/model artifacts;
+the four-ruling public sample is explicitly allowlisted. A source
 allowlist is stronger than relying on ignore patterns alone.

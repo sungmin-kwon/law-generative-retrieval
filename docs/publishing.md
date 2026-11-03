@@ -24,7 +24,9 @@ The scanner is a targeted check, not a proof that every secret, confidential fac
 or ownership issue can be recognized automatically. Review the exported tree and
 its build artifacts before publication. The code-only export uses MIT; preserve
 LICENSE and NOTICE. The dataset guide and data-free specifications explain
-provenance without distributing the research data. Do not apply the software
+provenance without distributing the full research data. The four-ruling worked
+example separately identifies official excerpts and project-authored material;
+preserve its source links and attribution. Do not apply the software
 license to separately obtained datasets or model weights.
 
 When the local tree is ready:

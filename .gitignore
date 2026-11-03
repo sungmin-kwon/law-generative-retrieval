@@ -24,6 +24,10 @@ htmlcov/
 *.swo
 .DS_Store
 data/
+# Keep the attributed official sample while ignoring other data directories.
+!/src/genrag/data/
+/src/genrag/data/*
+!/src/genrag/data/korean_tax_rulings.json
 *.jsonl
 !examples/synthetic/*.jsonl
 ckpt/

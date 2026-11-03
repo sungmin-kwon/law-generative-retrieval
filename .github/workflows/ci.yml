@@ -5,6 +5,9 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 
+env:
+  PYTHONUTF8: "1"
+
 jobs:
   test:
     strategy:
@@ -23,5 +26,6 @@ jobs:
       - run: ruff check src tests/public
       - run: ruff format --check src tests/public
       - run: python -m genrag doctor
+      - run: python -m genrag demo-ko --json
       - run: python -m genrag compare examples/synthetic/dense.jsonl examples/synthetic/generative.jsonl --universe examples/synthetic/universe.json
       - run: python -m build

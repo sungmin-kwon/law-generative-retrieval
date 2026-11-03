@@ -5,7 +5,7 @@ from genrag.models import Prediction, Universe
 from genrag.ranking import ChunkHit, collapse_chunks, reciprocal_rank_fusion
 from genrag.trie import IdentifierTrie
 
-__version__ = "0.1.0"
+__version__ = "0.2.1"
 
 __all__ = [
     "ChunkHit",

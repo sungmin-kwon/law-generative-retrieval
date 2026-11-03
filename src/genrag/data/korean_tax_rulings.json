@@ -1,0 +1,131 @@
+{
+  "schema_version": "genrag.korean-tax-rulings.v1",
+  "official_rulings": true,
+  "question_source": "Project-authored synthetic illustrations; not questions from the research training or evaluation releases.",
+  "ranking_source": "Hand-authored illustrative rankings, not outputs of an embedding or language model.",
+  "notice": "Four historical rulings published by Korea's National Tax Service, with attributed short excerpts and project-authored summaries. Example questions and rankings illustrate retrieval mechanics, not measured model performance or current tax advice.",
+  "rights": {
+    "project_material": "MIT covers the code, authored summaries, example questions and ranking fixtures.",
+    "official_material": "Official titles, metadata and attributed excerpts retain their source status; see NOTICE.md and the linked NTS policy.",
+    "source_policy_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=6791&cntntsId=8169",
+    "quotation_reference_url": "https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1025203557"
+  },
+  "documents": [
+    {
+      "evidence_id": "NTS-INTERP-VALUEADDTAX-0063027",
+      "category": "부가가치세",
+      "title": "거래처로부터 변질된 물품을 반품 받고 교환하여 주는 제품에 대한 세금계산서",
+      "summary": "1995년 국세청 회신은 변질 물품을 반품받은 뒤 동일제품으로 교환하는 경우와 동종·유사제품으로 교환하거나 현금으로 환불하는 경우를 구분합니다. 동일제품 교환은 재화의 공급으로 보지 않고 수정세금계산서를 교부하지 않는다고 설명합니다. 동종·유사제품 교환에는 세금계산서를, 반품 물품에는 수정세금계산서를 교부하며 현금 환불도 별도로 다룹니다.",
+      "summary_source": "project_authored",
+      "official_excerpt": {
+        "section": "회신",
+        "text": "당해 거래처로부터 반품 받는 물품에 대하여는 수정세금계산서를 교부하지 아니하는 것이며,",
+        "is_complete_section": false,
+        "context": "Part of paragraph 2, concerning replacement of spoiled goods with an identical product. See the summary and original reply for similar-product exchanges and refunds."
+      },
+      "provenance": {
+        "publisher": "국세청 (National Tax Service, Republic of Korea)",
+        "source_id": "010000000000088650",
+        "official_document_number": "부가46015-1636",
+        "issued_on": "1995-09-07",
+        "source_url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000088650",
+        "verified_on": "2026-11-03"
+      }
+    },
+    {
+      "evidence_id": "NTS-INTERP-INTLTAX-0109574",
+      "category": "국제조세",
+      "title": "본점에 대한 미지급금 계정을 본점계정으로 대체시 채무면제이익 해당 여부",
+      "summary": "2009년 사전답변은 미국법인의 국내지점이 본점의 용역대금을 관계회사 미지급금으로 기록했다가 본점계정으로 대체하는 경우를 다룹니다. 제시된 사실관계에서는 그 미지급금 감소를 채무면제이익으로 보지 않는다고 답변합니다.",
+      "summary_source": "project_authored",
+      "official_excerpt": {
+        "section": "요지",
+        "text": "동 미지급금 계정의 감소를 채무면제이익으로 보지 않음",
+        "is_complete_section": false,
+        "context": "Conclusion for the described foreign head-office/domestic-branch account transfer; not a general rule for all debt forgiveness."
+      },
+      "provenance": {
+        "publisher": "국세청 (National Tax Service, Republic of Korea)",
+        "source_id": "010000000000138098",
+        "official_document_number": "법규국조 2009-375",
+        "issued_on": "2009-11-16",
+        "source_url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000138098",
+        "verified_on": "2026-11-03"
+      }
+    },
+    {
+      "evidence_id": "NTS-INTERP-INCOMETAX-0009735",
+      "category": "종합소득세",
+      "title": "부동산임대업자의 차량유지비 등 필요경비 산입 여부",
+      "summary": "2005년 회신은 부동산임대업자가 사용하는 차량 등 자산의 유지·관리비를 다룹니다. 업무와 가사에 공통으로 관련된 지출은 업무상 통상 필요한 부분이 명확히 구분될 때 그 구분되는 금액을 필요경비에 산입할 수 있다고 설명합니다. 업무 관련성이 불명확하거나 주로 가사에 관련된 비용과 구별합니다.",
+      "summary_source": "project_authored",
+      "official_excerpt": {
+        "section": "요지",
+        "text": "그 구분되는 금액에 대하여는 필요경비에 산입함",
+        "is_complete_section": false,
+        "context": "Applies where the ordinarily necessary business-use portion of mixed business/household expenditure can be clearly distinguished."
+      },
+      "provenance": {
+        "publisher": "국세청 (National Tax Service, Republic of Korea)",
+        "source_id": "010000000000025811",
+        "official_document_number": "서면인터넷방문상담1팀-1308",
+        "issued_on": "2005-10-28",
+        "source_url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000025811",
+        "verified_on": "2026-11-03"
+      }
+    },
+    {
+      "evidence_id": "NTS-INTERP-VALUEADDTAX-0003682",
+      "category": "부가가치세",
+      "title": "당초의 거래상대방이 아닌 자로부터 반품을 받는 경우 수정세금계산서",
+      "summary": "1992년 회신은 최초 거래상대방과 실제 반품자가 다른 경우를 다룹니다. 그 사실관계에서는 당시 부가가치세법 시행령 제59조에 의한 수정세금계산서를 교부할 수 없다고 답변합니다. 동일 거래처에서 변질 물품을 반품받아 교환하는 첫 번째 사례와 구별되는 검색 후보입니다.",
+      "summary_source": "project_authored",
+      "official_excerpt": {
+        "section": "회신",
+        "text": "수정세금계산서를 교부할 수 없다.",
+        "is_complete_section": false,
+        "context": "Conclusion when goods are returned by someone other than the original transaction counterparty."
+      },
+      "provenance": {
+        "publisher": "국세청 (National Tax Service, Republic of Korea)",
+        "source_id": "010000000000009664",
+        "official_document_number": "부가22601-303",
+        "issued_on": "1992-03-10",
+        "source_url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000009664",
+        "verified_on": "2026-11-03"
+      }
+    }
+  ],
+  "training_pair_examples": [
+    {
+      "query_role": "plain_language",
+      "query": "고객이 변질된 상품을 돌려보내 같은 제품으로 교환해 주면 세금계산서를 다시 처리해야 하나요?",
+      "evidence_id": "NTS-INTERP-VALUEADDTAX-0063027"
+    },
+    {
+      "query_role": "keyword_search",
+      "query": "변질 물품 반품 동일제품 동종 유사제품 교환 수정세금계산서",
+      "evidence_id": "NTS-INTERP-VALUEADDTAX-0063027"
+    },
+    {
+      "query_role": "fact_pattern",
+      "query": "도매업자가 거래처에서 변질된 물품을 회수했습니다. 같은 제품을 다시 주는 경우와 비슷한 제품으로 바꿔 주는 경우 세금계산서 처리가 달라지나요?",
+      "evidence_id": "NTS-INTERP-VALUEADDTAX-0063027"
+    },
+    {
+      "query_role": "statute_grounded",
+      "query": "부가가치세법 시행령 제59조를 적용한 이 해석에서 동일제품 교환과 동종·유사제품 교환의 수정세금계산서 처리는 어떻게 구분되나요?",
+      "evidence_id": "NTS-INTERP-VALUEADDTAX-0063027"
+    }
+  ],
+  "example_query": {
+    "query_id": "DEMO-Q-001",
+    "query": "변질된 물건을 거래처에서 반품받아 동일한 제품으로 바꿔 주면 수정세금계산서도 발급해야 하나요?",
+    "gold_evidence_id": "NTS-INTERP-VALUEADDTAX-0063027"
+  },
+  "sample_rankings": {
+    "dense": ["NTS-INTERP-INTLTAX-0109574", "NTS-INTERP-VALUEADDTAX-0063027", "NTS-INTERP-INCOMETAX-0009735"],
+    "bm25": ["NTS-INTERP-INCOMETAX-0009735", "NTS-INTERP-VALUEADDTAX-0063027", "NTS-INTERP-INTLTAX-0109574"],
+    "generative": ["NTS-INTERP-VALUEADDTAX-0063027", "NTS-INTERP-VALUEADDTAX-0003682", "NTS-INTERP-INTLTAX-0109574"]
+  }
+}

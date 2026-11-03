@@ -32,11 +32,13 @@ PUBLIC_FILES = (
     "docs/evaluation.md",
     "docs/development.md",
     "docs/publishing.md",
+    "src/genrag/data/korean_tax_rulings.json",
 )
 PUBLIC_TREES = {
     "src/genrag": {".py", ".typed"},
     "tests/public": {".py"},
     "examples/synthetic": {".json", ".jsonl", ".md"},
+    "examples/korean-tax": {".md"},
     "dataset_specs": {".json", ".md"},
 }
 SECRET_PATTERNS = {

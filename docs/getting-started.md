@@ -11,7 +11,14 @@ python -m venv .venv
 python -m pip install .
 genrag --help
 genrag doctor
+genrag demo-ko
 ```
+
+Start with the [Korean tax-ruling worked example](../examples/korean-tax/README.md)
+to see a Korean question resolve to an actual NTS 해석례 ID and document.
+`genrag demo-ko --json` exposes the complete data flow for inspection. Four
+historical official rulings are packaged with attribution; questions and rankings
+are illustrative. The command runs validation/fusion and lookup without model inference.
 
 This installs the distribution `generative-retrieval-lab`, importable as `genrag`.
 `python -m genrag` and the `genrag` command expose the same interface.
